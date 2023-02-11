@@ -21,7 +21,7 @@ import { VantResolver } from 'unplugin-vue-components/resolvers'
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
 
 export default defineConfig({
-  base: '/mahjong-scorer/',
+  base: './',
   define: {
     'process.env': {},
   },
