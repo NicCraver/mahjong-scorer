@@ -6,6 +6,16 @@ body,
   padding: 0;
 }
 
-html.dark {
-  background: #121212;
+html {
+  /* background: #f1f1f1; */
+  background-image: linear-gradient(-40deg, #accbee 0%, #e7f0fd 100%);
+  /* background-image: linear-gradient(-20deg, #d558c8 0%, #24d292 100%); */
+  /* background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%); */
 }
+
+/* [data-starport-craft] {
+  background: #0805;
+}
+[data-starport-proxy]:not([data-starport-landed]) {
+  background: #8005;
+} */

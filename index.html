@@ -1,17 +1,29 @@
+<!--
+ * @Author: Nic
+ * @Date: 2022-06-21 23:06:50
+ * @LastEditTime: 2023-01-30 18:06:09
+ * @LastEditors: Nic
+ * @Description: 
+ * @FilePath: /mahjong-scorer/index.html
+-->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <title>Vitesse Lite</title>
-  <meta name="description" content="Opinionated Vite Starter Template">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <title>Mahjong Scoring Device</title>
+  <meta name="description" content="Opinionated Vite Starter Template" />
+  <script src="https://unpkg.com/leancloud-storage/dist/av-live-query-min.js"></script>
 </head>
+
 <body class="font-sans dark:text-white dark:bg-hex-121212">
   <div id="app"></div>
   <script>
-    (function() {
-      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+    (function () {
+      const prefersDark
+        = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
       const setting = localStorage.getItem('color-schema') || 'auto'
       if (setting === 'dark' || (prefersDark && setting !== 'light'))
         document.documentElement.classList.toggle('dark', true)
@@ -19,4 +31,5 @@
   </script>
   <script type="module" src="/src/main.ts"></script>
 </body>
+
 </html>
